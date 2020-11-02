@@ -1,0 +1,41 @@
+    <div class="container login-form">
+       <!-- formGroup is used to group the form 
+       ngSubmit can be used inslead of using click in Angular -->
+            <form [formGroup]="registrationForm" (ngSubmit)=OnRegister()>
+                <div class="box">
+                    <div class="img">
+                        <i class="fa fa-home"></i>
+                    </div>
+                    <div class="heading">
+                        <h4>Corona Registration</h4>
+                    </div>
+                    <div class="form-fields">
+                        <div class="input-box">
+                            <input type="text" placeholder="Enter Name" class="form-control" formControlName="name" [ngClass]="{'fieldStyle':((submitted||f.name.touched)&&f.name.invalid)}"><!-- Example of using ngClass to style -->
+                            <span><i class="far fa-user"></i></span>
+                        </div>                        
+                        <div class="input-box">
+                            <input type="number" placeholder="Enter Phone Number" class="form-control" formControlName="phone" [ngStyle]="{'border-color':((submitted||f.phone.touched)&&registrationForm.invalid)?'red':null}"><!-- Example of using ngStyle to style -->
+                            <span><i class="fas fa-phone-alt"></i></span>
+                        </div>
+                        <div class="input-box">
+                            <input type="email" placeholder="Enter Email" class="form-control" formControlName="email" [ngStyle]="{'border-color':((submitted||f.email.touched)&&registrationForm.invalid)?'red':null}">
+                            <span><i class="far fa-envelope"></i></span>
+                        </div>
+                        <div class="input-box">
+                            <input type="number" placeholder="Enter No. of People" class="form-control" formControlName="people" [ngStyle]="{'border-color':((submitted||f.people.touched)&&registrationForm.invalid)?'red':null}">
+                            <span><i class="fas fa-users"></i></span>
+                        </div>
+                        <div class="button-box">
+                            <button type="submit">Register</button>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <p>Registration Required for right to enter Venue</p>                                      
+
+                    </div>
+
+                </div>
+            </form>
+
+    </div>

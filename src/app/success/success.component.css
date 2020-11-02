@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none!important;
+    text-decoration: none!important;
+}
+
+.login-form {
+    height: 100vh;
+    background-image: url(/bg.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {    
+    min-width: 400px;
+    min-height: 420px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px #cccccc;
+    padding: 20px;
+}
+
+.box .img {
+    margin-bottom: 20px;
+}
+
+.box .img .fa-user{
+    width: 50px;
+    display: block;
+    margin: auto;
+}
+
+.box .heading {
+    color: #0089fe;
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+    margin: 15px 0px 10px;
+    padding-bottom: 3px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.box .heading h4{    
+    margin: 15px 0px 10px;
+    border-bottom: 1px solid;
+    padding-bottom: 3px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.box .form-fields {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.box .form-fields .input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.box .form-fields .input-box .form-control {
+    height: 40px;
+    width: 100%;
+    padding: 0px 0px 0px 45px;
+    color: #444444;
+    border: 1px solid #cccccc;
+}
+
+.box .form-fields .input-box .form-control::placeholder {
+    color: #cccccc;
+}
+
+.box .form-fields .input-box span {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* z-index: 1; */
+
+}
+
+.button-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button-box button {
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #0089fe;
+    padding: 8px 35px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow .5s ease;
+
+}
+
+.button-box button:hover{
+    box-shadow: 0px 0px 10px #444444;
+    
+}
+
+
+.box .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box .footer p {
+    text-align: center;
+    color: #cccccc;
+    font-size: 14px;
+    margin: 15px 0px;
+}
+
+
+
+@media(max-width: 500px) {
+    .login-form .box {
+        min-width: 100%;
+        padding: 30px;
+    }
+
+    .login-form form{
+        min-width: 100%;
+    }
+}
+ 
+
+
+
